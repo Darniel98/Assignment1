@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function myFunction() {
+                var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+  }
+     </script>
+    <body>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li> <a href="About.html">About</a></li>
+        </ul>
+        <div class="w3-content" style="max-width:1200px">
+            <!--<img class="mySlides w3-animate-fading" src="IMG1.jpg" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="IMG2.jpg" style="width:100%">-->
+            <img class="mySlides w3-animate-fading" src="d2.jpg" style="width:100%">
+            <!--<img class="mySlides w3-animate-fading" src="IMG3.jpg" style="width:100%">-->
+          
+            <!--<div class="w3-row-padding w3-section">
+                <div class="w3-col s4">
+                    <img class="demo w3-opacity" src="IMG1.jpg"
+                    style="width:100%" onclick="currentDiv(1)">
+                  </div>
+              <div class="w3-col s4">
+                <img class="demo w3-opacity" src="IMG2.jpg"
+                style="width:100%" onclick="currentDiv(1)">
+              </div>*/
+              <div class="w3-col s4">-->
+                <img class="demo w3-opacity" src="d2.jpg"
+                style="width:100%;display:none" onclick="currentDiv(2)">
+              </div>
+              <!--<div class="w3-col s4">
+                <img class="demo w3-opacity" src="IMG3.jpg"
+                style="width:100%;display:none" onclick="currentDiv(3)">
+              </div>-->
+            </div>
+          </div>
+    </body>
+</html>
